@@ -2,8 +2,8 @@ import gulp from 'gulp'
 import gulpSass from 'gulp-sass'
 import nodeSass from 'sass'
 import pug from 'gulp-pug'
+import nunjucksRender from 'gulp-nunjucks-render'
 import webpack from 'webpack-stream'
-import esbuild from 'gulp-esbuild'
 import browsersync from 'browser-sync'
 
 const sass = gulpSass(nodeSass)
@@ -32,12 +32,15 @@ const browserSync = () => {
 
 const html = () => {
   return gulp
-    .src('./src/pug/page/*.pug')
-    .pipe(
-      pug({
-        pretty: true,
-      })
-    )
+    .src('./src/njk/**/*.njk')
+    // .pipe(
+    //   pug({
+    //     pretty: true,
+    //   })
+    // )
+    .pipe(nunjucksRender({
+      path: ['src/templates/']
+    }))
     .pipe(gulp.dest('./dist'))
     .pipe(browsersync.stream())
 }
@@ -54,12 +57,6 @@ const script = () => {
   return (
     gulp
       .src('./src/js/main.js')
-      // .pipe(
-      //   esbuild({
-      //     outfile: 'main.js',
-      //     bundle: true,
-      //   })
-      // )
       .pipe(
         webpack({
           mode: 'development',
@@ -71,16 +68,6 @@ const script = () => {
       .pipe(gulp.dest('./dist'))
       .pipe(browsersync.stream())
   )
-  // return gulp
-  //   .src('./src/ts/main.ts')
-  //   .pipe(
-  //     esbuild({
-  //       outfile: 'main.js',
-  //       bundle: true
-  //     })
-  //   )
-  //   .pipe(gulp.dest('./dist'))
-  //   .pipe(browsersync.stream())
 }
 
 const image = () => {
@@ -105,7 +92,7 @@ export default () => {
   font()
   resource()
   browserSync()
-  gulp.watch('./src/pug/**/*.pug', html)
+  gulp.watch('./src/njk/**/*.njk', html)
   gulp.watch('./src/scss/**/*.scss', style)
   gulp.watch('./src/js/**/*.js', script)
   gulp.watch('./src/img/**/*', image)
