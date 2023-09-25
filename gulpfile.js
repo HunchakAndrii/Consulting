@@ -39,7 +39,7 @@ const html = () => {
     //   })
     // )
     .pipe(nunjucksRender({
-      path: ['src/templates/']
+      path: ['src/njk/layout/']
     }))
     .pipe(gulp.dest('./dist'))
     .pipe(browsersync.stream())
