@@ -1,149 +1,31 @@
 // Inlcude fonts
-@include font-face('Roboto', 'Roboto-Regular', 400);
-@include font-face('Roboto', 'Roboto-Bold', 700);
+@include font-face('Garamond', 'EBGaramond-Regular', 400);
+@include font-face('Garamond', 'EBGaramond-Medium', 500);
+@include font-face('Mulish', 'Mulish-Regular', 400);
+@include font-face('Mulish', 'Mulish-Medium', 500);
+@include font-face('Mulish', 'Mulish-Bold', 700);
 
 // Main Fonts
 .title-h1 {
-  font-size: 64px;
-  line-height: if($pixel, 83px, 1.3);
-  font-weight: 900;
-  letter-spacing: 1px;
-
-  @media (max-width: 1199px) {
-    font-size: 50px;
-    line-height: if($pixel, 63px, null);
-  }
-
-  @media (max-width: $tablet-sm) {
-    font-size: 42px;
-  }
+  font-family: 'Garamond';
+  font-size: 120px;
+  line-height: 130px;
+  font-weight: 500;
 }
 
 .title-h2 {
-  font-size: 46px;
-  line-height: if($pixel, 60px, 1.3);
-  font-weight: 900;
-
-  @media (max-width: 1199px) {
-    font-size: 35px;
-    line-height: if($pixel, 46px, null);
-  }
+  font-family: 'Garamond';
+  font-size: 120px;
+  line-height: 130px;
+  font-weight: 500;
 }
 
-.title-h3 {
-  font-size: 32px;
-  line-height: if($pixel, 42px, 1.3);
-  font-weight: 900;
-
-  @media (max-width: 991px) {
-    font-size: 22px;
-    line-height: if($pixel, 27px, null);
-  }
+.text-p1 {
+  font-size: 26px;
+  line-height: 40px;
 }
 
-.title-h4 {
-  font-size: 28px;
-  line-height: if($pixel, 42px, 1.5);
-  font-weight: 700;
-
-  @media (max-width: $tablet-sm) {
-    font-size: 18px;
-    line-height: if($pixel, 27px, null);
-  }
-}
-
-.title-h5 {
-  font-size: 16px;
-  line-height: if($pixel, 26px, 1.6);
-  font-weight: 700;
-
-  @media (max-width: $tablet-sm) {
-    font-size: 14px;
-    line-height: if($pixel, 22px, null);
-  }
-}
-
-.title-h6 {
-  font-size: 16px;
-  line-height: if($pixel, 24px, 1.5);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-
-  @media (max-width: 1199px) {
-    font-size: 14px;
-    line-height: if($pixel, 21px, null);
-  }
-}
-
-.title-bold {
+.text-p2 {
   font-size: 20px;
-  line-height: if($pixel, 30px, 1.5);
-  font-weight: 700;
-
-  @media (max-width: 991px) {
-    font-size: 18px;
-    line-height: if($pixel, 27px, null);
-  }
-}
-
-.text-main {
-  font-size: 16px;
-  line-height: 1.6;
-  line-height: if($pixel, 26px, 1.6);
-
-  @media (max-width: $tablet-sm) {
-    font-size: 14px;
-    line-height: if($pixel, 22px, null);
-  }
-}
-
-.text-lead {
-  font-size: 20px;
-  line-height: if($pixel, 30px, 1.5);
   line-height: 30px;
-
-  @media (max-width: $tablet-sm) {
-    font-size: 18px;
-    line-height: if($pixel, 27px, null);
-  }
-}
-
-.text-big {
-  font-size: 18px;
-  line-height: if($pixel, 27px, 1.5);
-  font-weight: 700;
-
-  @media (max-width: $tablet-sm) {
-    font-size: 16px;
-    line-height: if($pixel, 26px, null);
-  }
-}
-
-.text-small {
-  font-size: 14px;
-  line-height: if($pixel, 21px, 1.5);
-
-  @media (max-width: $tablet-sm) {
-    font-size: 12px;
-    line-height: if($pixel, 18px, null);
-  }
-}
-
-.text-display-4 {
-  color: $primary;
-  font-size: 48px;
-  line-height: if($pixel, 62px, 1.3);
-  font-weight: 900;
-  letter-spacing: 1px;
-
-  @media (max-width: $tablet-sm) {
-    font-size: 36px;
-    line-height: if($pixel, 48px, null);
-  }
-}
-
-.text-extraexsmall {
-  font-size: 10px;
-  line-height: if($pixel, 15px, 1.5);
 }
