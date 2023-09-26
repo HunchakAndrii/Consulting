@@ -33,13 +33,8 @@ const browserSync = () => {
 const html = () => {
   return gulp
     .src('./src/njk/**/*.njk')
-    // .pipe(
-    //   pug({
-    //     pretty: true,
-    //   })
-    // )
     .pipe(nunjucksRender({
-      path: ['src/njk/layout/']
+      path: ['src/njk/layout/', 'src/njk/components/']
     }))
     .pipe(gulp.dest('./dist'))
     .pipe(browsersync.stream())
