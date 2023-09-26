@@ -5,6 +5,14 @@
   height: 120px;
 }
 
+.header-logo {
+  display: block;
+}
+
+.header-logo__img {
+  display: block;
+}
+
 .header-nav__link {
   color: black;
   transition: .3s color ease;

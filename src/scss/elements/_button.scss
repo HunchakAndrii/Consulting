@@ -1,136 +1,18 @@
-$theme-colors: (
-  'custom': #9461fb,
-  'primary': #0d6efd,
-  'secondary': #6c757d,
-  'success': #198754,
-  'info': #0dcaf0,
-  'warning': #ffc107,
-  'danger': #dc3545,
-  'light': #f8f9fa,
-  'dark': #212529,
-) !default;
-
-.btn {
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: $radius;
-  text-align: center;
-  user-select: none;
-  border: 1px solid;
-  font-size: 16px;
-  line-height: 1.5;
-  transition: .3s all ease;
-
-  &:active,
-  &:focus {
-    outline: none;
-  }
-}
-
-@each $color, $value in $theme-colors {
-  .btn-#{$color} {
-    @if $color == 'light' {
-      background-color: $value;
-      border-color: $black;
-      color: $black;
-
-      &:hover {
-        background-color: mix(white, $value, 10%);
-        border-color: mix(white, $value, 10%);
-      }
-
-      &:hover,
-      &:active,
-      &:focus {
-        background-color: mix(black, $value, 10%);
-        box-shadow: 0 0 0 5px rgba(black, 0.5);
-      }
-
-      &:disabled {
-        opacity: 0.5;
-        box-shadow: none;
-        background-color: $value;
-        border-color: $black;
-        color: $black;
-      }
-    } @else {
-      background-color: $value;
-      border-color: $value;
-      color: $white;
-
-      &:hover {
-        background-color: mix(black, $value, 10%);
-        border-color: mix(black, $value, 10%);
-      }
-
-      &:hover,
-      &:active,
-      &:focus {
-        background-color: mix(black, $value, 10%);
-        box-shadow: 0 0 0 5px rgba($value, 0.5);
-      }
-
-      &:disabled {
-        opacity: 0.5;
-        box-shadow: none;
-        background-color: $value;
-        border-color: $value;
-        color: $white;
-      }
-    }
-  }
-}
-
-@each $color, $value in $theme-colors {
-  .btn-outline-#{$color} {
-    @if $color == 'light' {
-      background-color: transparent;
-      border-color: $black;
-      color: $black;
-
-      &:hover,
-      &:active,
-      &:focus {
-        color: $white;
-        background-color: $black;
-        box-shadow: 0 0 0 5px rgba($black, 0.5);
-      }
-
-      &:disabled {
-        opacity: 0.5;
-        box-shadow: none;
-        color: $white;
-        background-color: $black;
-      }
-    } @else {
-      background-color: transparent;
-      border-color: $value;
-      color: $value;
-
-      &:hover,
-      &:active,
-      &:focus {
-        color: $white;
-        background-color: $value;
-        box-shadow: 0 0 0 5px rgba($value, 0.5);
-      }
-
-      &:disabled {
-        opacity: 0.5;
-        box-shadow: none;
-        color: $value;
-        background-color: transparent;
-      }
-    }
-  }
-}
-
-.btn-lg {
-  padding: 8px 16px;
+.btn-main {
+  padding: 26px 48px;
   font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  border-radius: 40px;
+  background: black;
+  color: white;
 }
 
-.btn-sm {
-  padding: 4px 8px;
-  font-size: 14px;
+.btn-transparent {
+  padding: 18px 32px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  border-radius: 40px;
+  border: 1px solid black;
 }
