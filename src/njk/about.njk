@@ -23,6 +23,22 @@
   </div>
 </section>
 
+<section class="about-block">
+  <div class="container">
+    <div class="about-block__wrap">
+      <div class="about-block__block">
+        <h4 class="title-h3 about-block__title">Business support in the UAE</h4>
+        <p class="text-p2 about-block__text">Our team specializes in providing accounting and tax services in the UAE, providing financial advice tailored to your needs.</p>
+      </div>
+
+      <div class="about-block__block">
+        <h4 class="title-h3 about-block__title">Combination of global and local experience</h4>
+        <p class="text-p2 about-block__text">Combining international experience with deep knowledge of the local market, we provide our customers with exceptional service. We pride ourselves on being available, quickly and efficiently resolving customer issues and concerns.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="about-trust">
   <div class="container">
     <h2 class="title-h3 about-trust__title">We are trusted</h2>
@@ -34,6 +50,12 @@
       <div class="about-trust__block">
         <p class="text-p2 about-trust__text">We believe that effective communication and proactive, results-driven approaches are integral to success for entrepreneurial leaders.</p>
       </div>
+    </div>
+
+    <div class="about-trust__brands">
+      {% for i in [1, 2, 3, 4, 5, 6, 7] %}
+      <img class="about-trust__brand" src="/img/brand-{{ i }}.png" alt="Изображение {{ i }}">
+      {% endfor %}
     </div>
   </div>
 </section>

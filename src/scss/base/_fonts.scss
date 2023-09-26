@@ -15,16 +15,36 @@
 
 .title-h2 {
   font-family: 'Garamond';
-  font-size: 72px;
-  line-height: 80px;
+  font-size: 34px;
+  line-height: 44px;
   font-weight: 500;
+  
+  @media (min-width: 450px) {
+    font-size: 37px;
+    line-height: 48px;
+  }
+  
+  @media (min-width: 1200px) {
+    font-size: 72px;
+    line-height: 80px;
+  }
 }
 
 .title-h3 {
   font-family: 'Garamond';
-  font-size: 50px;
-  line-height: 64px;
+  font-size: 34px;
+  line-height: 44px;
   font-weight: 500;
+
+  @media (min-width: 450px) {
+    font-size: 37px;
+    line-height: 48px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 50px;
+    line-height: 64px;
+  }
 }
 
 .text-p1 {
