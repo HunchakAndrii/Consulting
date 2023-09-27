@@ -1,8 +1,52 @@
 {% extends "main.njk" %}
 {% block content %}
-<div id="content">
+
+<section class="first-section">
   <div class="container">
-    <h1>Home</h1>
+    <div class="first-section__wrap">
+      <div class="left-block">
+        <div class="left-block__content">
+          <h2 class="title-h2 left-block__title">Take сontrol of your finances with our reliable services</h2>
+          <p class="text-p2 left-block__text">Financial planning, tax consultancy and accounting solutions</p>
+          <button class="btn-transparent left-block__btn">Learn more</button>
+        </div>
+        <div class="left-block__image">
+          <img class="left-block__img" src="/img/first-section.png" alt="">
+        </div>
+      </div>
+
+      <div class="right-block">
+        <div class="right-block__top">
+          <div class="right-block__top__one">
+            <div class="right-block__image">
+              <img class="right-block__img" src="/img/first-section-logo1.svg" alt="">
+            </div>
+            <p class="right-block__text">Trusted by Companies</p>
+          </div>
+          <div class="right-block__top__two">
+            <p class="right-block__text number-of-clients">100+</p>
+            <p class="right-block__text">Satisfied Clients</p>
+          </div>
+        </div>
+
+        <div class="right-block__down">
+          <p class="right-block__down__text">Get quick free сonsultations</p>
+          <button class="btn-main btn-contact-us">Contact Us</button>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+<section class="what-we-do">
+  <div class="container">
+    <div class="what-we-do__wrap">
+      <h1 class="title-h1 what-we-do__title">What we do</h1>
+      <p class="text-p1 what-we-do__text">We provide accounting services, tax consultancy and financial solutions to help you stay ahead of the game from all key
+      sectors of the economy.<br>Relying on our unrivalled multi-year experience, you will be able to discover new ways of development and find winning
+      opportunities.</p>
+      <button class="btn-transparent what-we-do__btn">More about us</button>
+    </div>
+  </div>
+</section>
+
 {% endblock %}

@@ -1,0 +1,162 @@
+
+.container {
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+.first-section__wrap {
+  display: grid;
+  grid-template-columns: 3fr 1fr; 
+  gap: 24px;
+}
+
+// left block
+
+.left-block {
+  border-radius: 48px;
+  background: $light-gray;
+  position: relative;
+}
+
+.left-block__content {
+  padding: 56px 0px 48px 56px;
+}
+
+.left-block__title {
+  font-size: 50px;
+  line-height: 64px;
+  max-width: 50%;
+}
+
+.left-block__text {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 32px 0px 342px 0px;
+  max-width: 33%;
+}
+
+.left-block__image {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 34px;
+}
+
+// right-block
+
+.right-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.right-block__top__one, .right-block__top__two {
+  padding: 23px 54px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+  border: 1px $black solid;
+  border-radius: 0px 96px 0px 0px;
+  position: relative;
+  &:hover {
+    background-color: $light-blue;
+  }
+}
+
+.right-block__top__one::after {
+  content: "";
+  background-image: url("/img/vector-round-1.svg");
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  right: 0px;
+}
+
+.right-block__top__two::after {
+  content: "";
+  background-image: url("/img/vector-round-2.svg");
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  right: 0px;
+}
+
+.right-block__top__two {
+  padding: 56px 54px;
+  margin-top: -1px;
+}
+
+.right-block__text {
+  font-family: EB Garamond;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px; 
+  letter-spacing: 0.44px;
+}
+
+.number-of-clients {
+  text-align: center;
+  font-family: Mulish;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 64px; 
+}
+
+.right-block__down {
+  background-color: $violet;
+  padding: 48px;
+  border-radius: 48px 48px 48px 0px;
+}
+
+.right-block__down__text {
+  font-size: 44px;
+  line-height: 56px;
+  font-family: EB Garamond;
+  color: $white;
+  margin-bottom: 75px;
+}
+
+.btn-contact-us {
+  background-color: $white;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  color: $black;
+  line-height: 28px;
+  padding: 10px 32px;
+  vertical-align: middle;
+  &::before{
+    content: "";
+    background-image: url("/img/icon-tell.svg");
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+    vertical-align: middle;
+  }
+}
+
+/* ------------first-section end----------- */
+.what-we-do {
+  margin-top: 100px;
+  background-image: url("/img/backgrounf_what-we-do.svg");
+}
+
+.what-we-do__title {
+  text-align: center;
+}
+
+
+.what-we-do__text {
+  max-width: 1026px;
+  margin: 0 auto;
+  text-align: center;
+}
+
