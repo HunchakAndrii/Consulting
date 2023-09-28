@@ -1,4 +1,8 @@
 
+.first-section {
+  margin-bottom: 100px;
+}
+
 .container {
   max-width: 1720px;
   margin: 0 auto;
@@ -145,12 +149,20 @@
 
 /* ------------first-section end----------- */
 .what-we-do {
-  margin-top: 100px;
+  padding-top: 216px;
+  padding-bottom: 216px;
   background-image: url("/img/backgrounf_what-we-do.svg");
+  background-repeat: repeat;
+  background-size: 100% auto;
+}
+
+.what-we-do__wrap {
+  padding-top: 96px;
 }
 
 .what-we-do__title {
   text-align: center;
+  margin-bottom: 72px;
 }
 
 
@@ -158,5 +170,52 @@
   max-width: 1026px;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 72px;
 }
 
+.what-we-do__btn {
+  margin: 0 auto;
+  display: block;
+}
+
+/* ------------what we do-section end----------- */
+
+.what-sets {
+  margin-top: 40px;
+  margin-bottom: 115px;
+}
+
+.what-sets__title {
+  padding: 80px 40px;
+}
+
+.what-sets__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 80px;
+}
+
+.info-block {
+  padding: 48px 88px;
+}
+
+.info-block__title {
+  margin-top: 48px;
+  margin-bottom: 32px;
+  white-space: nowrap;
+}
+
+.what-sets__btn {
+  margin: 0 auto;
+  display: block;
+  &::after {
+    content: "";
+    background-image: url('/img/Arrow-icon.svg');
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-left: 12px;
+    vertical-align: middle;
+    padding-bottom: 33px;
+  }
+}
