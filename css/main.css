@@ -803,12 +803,12 @@ tool-tip:is([tip-position=left], [tip-position=inline-start]):dir(rtl)::after {
 
 .info-block {
   padding: 48px 88px;
+  max-width: 572px;
 }
 
 .info-block__title {
   margin-top: 48px;
   margin-bottom: 32px;
-  white-space: nowrap;
 }
 
 .what-sets__btn {
@@ -824,6 +824,173 @@ tool-tip:is([tip-position=left], [tip-position=inline-start]):dir(rtl)::after {
   margin-left: 12px;
   vertical-align: middle;
   padding-bottom: 33px;
+}
+
+.services-title {
+  margin: 80px 0px 80px 48px;
+}
+
+.services-info__block {
+  padding: 80px 0px;
+  display: flex;
+  gap: 24px;
+}
+
+.services-info__list-content {
+  margin: 0px 112px;
+  max-width: 769px;
+  width: 100%;
+}
+
+.services-info__list {
+  margin: 40px 0px;
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 20px;
+}
+
+.service__image {
+  margin: 0px 56px;
+}
+
+.services-info__btn {
+  display: block;
+}
+.services-info__btn::after {
+  content: "";
+  background-image: url("/img/Arrow-icon.svg");
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-left: 12px;
+  vertical-align: middle;
+  padding-bottom: 33px;
+}
+
+.experience__title {
+  margin: 80px 0px 80px 48px;
+}
+
+.experience__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.experience__btn {
+  margin: 80px auto;
+  display: block;
+}
+.experience__btn::after {
+  content: "";
+  background-image: url("/img/Arrow-icon.svg");
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-left: 12px;
+  vertical-align: middle;
+  padding-bottom: 33px;
+}
+
+.our-principles {
+  padding: 80px 0px 120px 0px;
+}
+
+.star__image {
+  padding-left: 48px;
+}
+
+.our-principles__wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 120px;
+}
+
+.our-principles__title {
+  max-width: 400px;
+  padding: 48px;
+}
+
+.our-principles__block {
+  height: 440px;
+  padding: 55px;
+  margin-top: -1px;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  border-radius: 48px;
+  border: 2px solid black;
+  background: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+}
+.our-principles__block:nth-child(even) {
+  background: #EBF3FF;
+}
+
+.our-principles__description {
+  max-width: 462px;
+  flex-grow: 1;
+}
+
+.our-principles__block__btn {
+  background-color: #fff;
+  max-width: 112px;
+  border-radius: 64px;
+  border: none;
+  padding: 8px 26px;
+}
+.our-principles__block__btn img {
+  width: 48px;
+  height: 48px;
+}
+
+.sto-plus__title {
+  text-align: center;
+  padding: 80px 0px;
+}
+
+.sto-plus__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.sto-plus__description {
+  max-width: 1138px;
+  margin: 0 auto;
+  padding: 60px 0px 140px 0px;
+}
+
+.work-together__title {
+  text-align: center;
+  padding: 80px 0px;
+}
+
+.form {
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 0 auto;
+}
+
+#name {
+  padding: 23px 32px;
+  border-radius: 40px;
+  border: 1px solid #616161;
+}
+
+#email {
+  padding: 23px 32px;
+  border-radius: 40px;
+  border: 1px solid #616161;
+}
+
+#request {
+  padding: 23px 32px;
+  border-radius: 40px;
+  border: 1px solid #616161;
 }
 
 .about-first {
