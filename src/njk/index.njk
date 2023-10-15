@@ -250,11 +250,10 @@
             id="request" 
             placeholder="What is your request" 
             required>
-              <option value="blue">blue</option>
-              <option value="red">red</option>
-              <option value="yellow">yellow</option>
-              <option value="green">green</option>
-              <option value="request" checked>What is your request?</option>
+            <option value="request" checked>What is your request?</option>
+              <option value="Accounting Services">Accounting Services</option>
+              <option value="Tax Consulting">Tax Consulting</option>
+              <option value="Financial Consulting">Financial Consulting</option>
         </select>
         <textarea 
           id="message" 
@@ -262,10 +261,26 @@
           rows="4" 
           cols="50" 
           required>
-          Tell more about your request
+Tell more about your request
       </textarea>
       <button class="btn-main form__btn">Send</button>
     </form>
+  </div>
+</section>
+<section class="contact">
+  <div class="line-star__image">
+    <img class="line-star__img" src="img/star-line.svg" alt="">
+  </div>
+
+  <div class="container">
+    <h2 class="title-h2 contact__title">Or you can contact with us</h2>
+    <div class="contact__btns">
+      <button class="whatsapp__btn">Whatsapp</button>
+      <button class="telegram__btn">Telegram</button>
+      <button class="email__btn">E-mail</button>
+    </div>
+    <p class="text-p2 contact__text">Click for a free consultation and confidently achieve financial goals. Empower your business with our expert services.
+    Act now!</p>
   </div>
 </section>
 {% endblock %}
