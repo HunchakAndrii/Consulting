@@ -399,9 +399,14 @@
 }
 
 #request {
+  appearance: none;
   padding: 23px 32px;
   border-radius: 40px;
-  border: 1px solid #616161;  
+  border: 1px solid #616161;
+  background-image: url('/img/select-arrow.svg');
+  background-size: 20px 10px;
+  background-position: right 34px center;
+  background-repeat: no-repeat;
 }
 
 #message {
