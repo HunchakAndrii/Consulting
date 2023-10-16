@@ -6,7 +6,7 @@
   display: grid;
   align-items: center;
   gap: 40px;
-  
+
   @media (min-width: 1200px) {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
@@ -14,7 +14,6 @@
 
   @media (min-width: 1600px) {
     gap: 175px;
-
   }
 }
 
@@ -37,7 +36,6 @@
     margin-bottom: 56px;
   }
 }
-
 
 //......................finance-second....................//
 
@@ -132,8 +130,8 @@
 .offer__btn {
   display: block;
   &::after {
-    content: "";
-    background-image: url("/img/Arrow-white.svg");
+    content: '';
+    background-image: url('/img/Arrow-white.svg');
     display: inline-block;
     width: 32px;
     height: 32px;
@@ -142,8 +140,6 @@
     padding-bottom: 33px;
   }
 
-  
-
   @media (min-width: 500px) {
     grid-column: 1 / -1;
     justify-self: center;
@@ -151,5 +147,90 @@
 
   @media (min-width: 1200px) {
     margin-top: 100px;
+  }
+}
+
+// ...........reputation................//
+
+.reputation {
+  padding: 90px 0px;
+
+  @media (min-width: 640px) {
+    padding: 100px 0px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 200px 0px 150px 0px;
+  }
+}
+
+.reputation__title {
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 82px;
+  }
+}
+.reputation__image {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 88px;
+  }
+}
+
+.reputation__text {
+  text-align: center;
+  max-width: 1138px;
+  margin: 0 auto;
+}
+
+// .............advantages..............//
+
+.advantages {
+}
+
+.advantages__content {
+  display: grid;
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.advantages__text-content {
+  @media (min-width: 1200px) {
+    grid-column: span 2;
+    padding: 50px 30px;
+  }
+}
+
+.advantages__title {
+  margin-bottom: 30px;
+
+  @media (min-width: 640px) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__text {
+  margin-bottom: 30px;
+
+  @media (min-width: 640px) {
+    margin-bottom: 40px;
+  }
+}
+.advantages__block {
+  padding: 30px;
+  border-radius: 28px;
+  border: 1px solid #000;
+  background-color: #F6F6F6;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  &:nth-child(even) {
+    background-color: #EBF3FF;
   }
 }
