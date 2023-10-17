@@ -1,95 +1,36 @@
 // Inlcude fonts
-@include font-face('Garamond', 'EBGaramond-Regular', 400);
-@include font-face('Garamond', 'EBGaramond-Medium', 500);
-@include font-face('Mulish', 'Mulish-Regular', 400);
-@include font-face('Mulish', 'Mulish-Medium', 500);
-@include font-face('Mulish', 'Mulish-Bold', 700);
+@include font-face('Circe', 'Circe-Regular', 400);
+@include font-face('Circe', 'Circe-Bold', 700);
 
 // Main Fonts
 .title-h1 {
-  font-family: 'Garamond';
-  font-size: 120px;
-  line-height: 130px;
-  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.2;
+
+  @media (min-width: 1200px) {
+    font-size: 48px;
+  }
 }
 
 .title-h2 {
-  font-family: 'Garamond';
-  font-size: 34px;
-  line-height: 44px;
-  font-weight: 500;
-  
-  @media (min-width: 450px) {
-    font-size: 37px;
-    line-height: 48px;
-  }
-  
+  font-size: 24px;
+  line-height: 1.2;
+
   @media (min-width: 1200px) {
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 32px;
   }
 }
 
 .title-h3 {
-  font-family: 'Garamond';
-  font-size: 34px;
-  line-height: 44px;
-  font-weight: 500;
-
-  @media (min-width: 450px) {
-    font-size: 37px;
-    line-height: 48px;
-  }
-
-  @media (min-width: 1200px) {
-    font-size: 50px;
-    line-height: 64px;
-  }
-}
-
-.title-h4 {
-  font-family: 'Garamond';
   font-size: 22px;
-  line-height: 36px;
-  font-weight: 500;
-
-  @media (min-width: 450px) {
-    font-size: 37px;
-    line-height: 48px;
-  }
+  line-height: 1.2;
 
   @media (min-width: 1200px) {
-    font-size: 40px;
-    line-height: 56px;
+    font-size: 28px;
   }
 }
 
 .text-p1 {
-  font-size: 18px;
-  line-height: 26px;
-
-  @media (min-width: 450px) {
-    font-size: 20px;
-    line-height: 32px;
-  }
-  
-  @media (min-width: 1200px) {
-    font-size: 26px;
-    line-height: 40px;
-  }
-}
-
-.text-p2 {
   font-size: 16px;
-  line-height: 26px;
-
-  @media (min-width: 450px) {
-    font-size: 18px;
-    line-height: 29px;
-  }
-  
-  @media (min-width: 1200px) {
-    font-size: 22px;
-    line-height: 34px;
-  }
+  line-height: 1.5;
 }

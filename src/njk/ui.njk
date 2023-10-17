@@ -1,0 +1,73 @@
+{% extends "main.njk" %} {% block content %} {% set colors = ['primary',
+'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'] %}
+
+<section>
+  <div class="container">
+    <h1>UI page</h1>
+
+    <div class="ui">
+      <div class="ui__wrap ui__wrap--column">
+        <h4 class="ui__caption">Text</h4>
+
+        <h1 class="title-h1">Title-h1</h1>
+        <h2 class="title-h2">Title-h2</h2>
+        <h3 class="title-h3">Title-h3</h3>
+        <p class="text-p1">Text-p1</p>
+      </div>
+    </div>
+
+    <div class="ui">
+      <div class="ui__wrap">
+        <h4 class="ui__caption">Button</h4>
+
+        {% for color in colors %}
+        <button class="btn btn-{{ color }}">{{ color }}</button>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="ui">
+      <div class="ui__wrap">
+        <h4 class="ui__caption">Button</h4>
+
+        {% for color in [colors[0], colors[1]] %}
+        <button class="btn btn-lg btn-{{ color }}">{{ color }}</button>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="ui">
+      <div class="ui__wrap">
+        <h4 class="ui__caption">Button</h4>
+
+        {% for color in [colors[0], colors[1]] %}
+        <button class="btn btn-sm btn-{{ color }}">{{ color }}</button>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="ui">
+      <div class="ui__wrap">
+        <h4 class="ui__caption">Button</h4>
+
+        {% for color in colors %}
+        <button class="btn btn-outline-{{ color }}">{{ color }}</button>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="ui">
+      <div class="ui__wrap">
+        <h4 class="ui__caption">Burger</h4>
+
+        <button class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
