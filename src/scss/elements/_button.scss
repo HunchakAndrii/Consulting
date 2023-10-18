@@ -65,17 +65,17 @@
     background: transparent;
     border: 1px solid $value;
 
-    &:hover,
-    &:focus {
+    &:hover:not(:disabled),
+    &:focus:not(:disabled) {
       color: white;
       background: $value;
     }
 
-    &:active {
+    &:active:not(:disabled) {
       background: darken($value, 15%);
     }
 
-    &:focus-visible {
+    &:focus-visible:not(:disabled) {
       box-shadow: 0 0 0 4px rgba(darken($value, 10%), 0.5);
     }
   }
@@ -87,17 +87,17 @@
     background: transparent;
     border: 1px solid $value;
 
-    &:hover,
-    &:focus {
+    &:hover:not(:disabled),
+    &:focus:not(:disabled) {
       color: black;
       background: $value;
     }
 
-    &:active {
+    &:active:not(:disabled) {
       background: lighten($value, 10%);
     }
 
-    &:focus-visible {
+    &:focus-visible:not(:disabled) {
       box-shadow: 0 0 0 4px rgba(lighten($value, 10%), 0.5);
     }
   }
@@ -107,8 +107,8 @@
   border: 1px solid black;
   color: black;
 
-  &:hover,
-  &:focus {
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
     color: black;
   }
 }
@@ -117,8 +117,8 @@
   border: 1px solid white;
   color: white;
 
-  &:hover,
-  &:focus {
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
     color: white;
   }
 }
@@ -131,4 +131,11 @@
 .btn-sm {
   padding: 4px 8px;
   font-size: 14px;
+}
+
+.btn {
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 }

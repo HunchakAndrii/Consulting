@@ -5,7 +5,7 @@
   <div class="container">
     <h1>UI page</h1>
 
-    <div class="ui">
+    {# <div class="ui">
       <div class="ui__wrap ui__wrap--column">
         <h4 class="ui__caption">Text</h4>
 
@@ -28,7 +28,7 @@
 
     <div class="ui">
       <div class="ui__wrap">
-        <h4 class="ui__caption">Button</h4>
+        <h4 class="ui__caption">Button lg</h4>
 
         {% for color in [colors[0], colors[1]] %}
         <button class="btn btn-lg btn-{{ color }}">{{ color }}</button>
@@ -38,7 +38,7 @@
 
     <div class="ui">
       <div class="ui__wrap">
-        <h4 class="ui__caption">Button</h4>
+        <h4 class="ui__caption">Button sm</h4>
 
         {% for color in [colors[0], colors[1]] %}
         <button class="btn btn-sm btn-{{ color }}">{{ color }}</button>
@@ -48,10 +48,22 @@
 
     <div class="ui">
       <div class="ui__wrap">
-        <h4 class="ui__caption">Button</h4>
+        <h4 class="ui__caption">Button outline</h4>
 
         {% for color in colors %}
         <button class="btn btn-outline-{{ color }}">{{ color }}</button>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="ui">
+      <div class="ui__wrap">
+        <h4 class="ui__caption">Button disabled</h4>
+
+        {% for color in colors %}
+        <button class="btn btn-outline-{{ color }}" disabled="disabled">
+          {{ color }}
+        </button>
         {% endfor %}
       </div>
     </div>
@@ -65,6 +77,46 @@
           <span></span>
           <span></span>
         </button>
+      </div>
+    </div> #}
+
+    <div class="ui">
+      <div class="ui__wrap">
+        <h4 class="ui__caption">Input</h4>
+
+        <input type="text" placeholder="Type text" />
+        <input type="email" placeholder="Type email" />
+        <input type="password" placeholder="Type password" />
+      </div>
+    </div>
+
+    <div class="ui">
+      <div class="ui__wrap ui__wrap--column">
+        <h4 class="ui__caption">Input checkbox</h4>
+
+        <div class="checkbox">
+          <input type="checkbox" id="checkboxOne" />
+          <label for="checkboxOne">Checkbox One</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="checkboxTwo" />
+          <label for="checkboxTwo">Checkbox Two</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui">
+      <div class="ui__wrap ui__wrap--column">
+        <h4 class="ui__caption">Input radio</h4>
+
+        <div class="radio">
+          <input type="radio" name="radio" id="radioOne" />
+          <label for="radioOne">Radio One</label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="radio" id="radioTwo" />
+          <label for="radioTwo">Radio Two</label>
+        </div>
       </div>
     </div>
   </div>
