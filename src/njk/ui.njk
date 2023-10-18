@@ -5,7 +5,7 @@
   <div class="container">
     <h1>UI page</h1>
 
-    {# <div class="ui">
+    <div class="ui">
       <div class="ui__wrap ui__wrap--column">
         <h4 class="ui__caption">Text</h4>
 
@@ -78,7 +78,7 @@
           <span></span>
         </button>
       </div>
-    </div> #}
+    </div>
 
     <div class="ui">
       <div class="ui__wrap">
@@ -95,12 +95,16 @@
         <h4 class="ui__caption">Input checkbox</h4>
 
         <div class="checkbox">
-          <input type="checkbox" id="checkboxOne" />
-          <label for="checkboxOne">Checkbox One</label>
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox">Checkbox</label>
         </div>
         <div class="checkbox">
-          <input type="checkbox" id="checkboxTwo" />
-          <label for="checkboxTwo">Checkbox Two</label>
+          <input type="checkbox" id="checkboxChecked" checked="checked" />
+          <label for="checkboxChecked">Checkbox Checked</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" disabled="disabled" id="checkboxDisabled" />
+          <label for="checkboxDisabled">Checkbox Disabled</label>
         </div>
       </div>
     </div>
@@ -110,12 +114,35 @@
         <h4 class="ui__caption">Input radio</h4>
 
         <div class="radio">
-          <input type="radio" name="radio" id="radioOne" />
-          <label for="radioOne">Radio One</label>
+          <input type="radio" name="radio" id="radio" />
+          <label for="radio">Radio One</label>
         </div>
         <div class="radio">
-          <input type="radio" name="radio" id="radioTwo" />
-          <label for="radioTwo">Radio Two</label>
+          <input type="radio" name="radio" id="radioChecked" checked="checked" />
+          <label for="radioChecked">Radio Two</label>
+        </div>
+        <div class="radio">
+          <input type="radio" name="radio" disabled="disabled" id="radioDisabled" />
+          <label for="radioDisabled">Radio Disabled</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui">
+      <div class="ui__wrap ui__wrap--column">
+        <h4 class="ui__caption">Switches</h4>
+
+        <div class="radio">
+          <input type="checkbox" role="switch" id="switch" />
+          <label for="switch">Switch One</label>
+        </div>
+        <div class="radio">
+          <input type="checkbox" role="switch" id="switchChecked" checked="checked" />
+          <label for="switchChecked">Switch Two</label>
+        </div>
+        <div class="radio">
+          <input type="checkbox" role="switch" disabled="disabled" id="switchDisabled" />
+          <label for="switchDisabled">Switch Disabled</label>
         </div>
       </div>
     </div>
