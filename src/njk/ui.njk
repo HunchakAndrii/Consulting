@@ -118,11 +118,21 @@
           <label for="radio">Radio One</label>
         </div>
         <div class="radio">
-          <input type="radio" name="radio" id="radioChecked" checked="checked" />
+          <input
+            type="radio"
+            name="radio"
+            id="radioChecked"
+            checked="checked"
+          />
           <label for="radioChecked">Radio Two</label>
         </div>
         <div class="radio">
-          <input type="radio" name="radio" disabled="disabled" id="radioDisabled" />
+          <input
+            type="radio"
+            name="radio"
+            disabled="disabled"
+            id="radioDisabled"
+          />
           <label for="radioDisabled">Radio Disabled</label>
         </div>
       </div>
@@ -137,13 +147,71 @@
           <label for="switch">Switch One</label>
         </div>
         <div class="radio">
-          <input type="checkbox" role="switch" id="switchChecked" checked="checked" />
+          <input
+            type="checkbox"
+            role="switch"
+            id="switchChecked"
+            checked="checked"
+          />
           <label for="switchChecked">Switch Two</label>
         </div>
         <div class="radio">
-          <input type="checkbox" role="switch" disabled="disabled" id="switchDisabled" />
+          <input
+            type="checkbox"
+            role="switch"
+            disabled="disabled"
+            id="switchDisabled"
+          />
           <label for="switchDisabled">Switch Disabled</label>
         </div>
+      </div>
+    </div>
+
+    <div class="ui">
+      <div class="ui__wrap ui__wrap--column">
+        <h4 class="ui__caption">Select</h4>
+
+        <select>
+          <option>One</option>
+          <option>Two</option>
+          <option>Three</option>
+        </select>
+
+        <select disabled="disabled">
+          <option>One</option>
+          <option>Two</option>
+          <option>Three</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="ui">
+      <div class="ui__wrap">
+        <h4 class="ui__caption">Spinner</h4>
+
+        {% for color in colors %}
+        <div class="spinner spinner-{{ color }}" role="status"></div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="ui">
+      <div class="ui__wrap">
+        <h4 class="ui__caption">Spinner</h4>
+
+        {% for color in [colors[0], colors[1]] %}
+        <div class="spinner spinner-sm spinner-{{ color }}" role="status"></div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="ui">
+      <div class="ui__wrap">
+        <h4 class="ui__caption">Spinner</h4>
+
+        {% for color in [colors[0], colors[1]] %}
+        <div class="spinner spinner-lg spinner-{{ color }}" role="status"></div>
+        {% endfor %}
       </div>
     </div>
   </div>
