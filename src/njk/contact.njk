@@ -1,0 +1,38 @@
+{% extends "main.njk" %}
+
+{% block head %}
+  {% set title = 'Contact' %}
+{% endblock head %}
+
+{% block content %}
+
+<section class="contact-page">
+  <div class="container">
+    <div class="contact-page__wrap">
+      <h2 class="title-h2 contact-page__title">Contact</h2>
+      <div class="link__block">
+        <p class="text-p1"><a class="adress-link" href="https://maps.app.goo.gl/PrahRx3Zhxxac7EU7" target="_blank">19th floor The Exchange Tower, Business Bay, Dubai, United Arab Emirates</a></p>
+        <p class="text-p1"><a class="tell-link" href="tel:+971 56 840 0795">+971 56 840 0795</a></p>
+        <p class="text-p1"><a class="email-link" href="mailto:andreygunchak@gmail.com">hello@gdconsulting.ae</a></p>
+      </div>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84897.07935273481!2d25.85151841462056!3d48.32143272296228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4734087fe2f6cd05%3A0xc5b396f659796d7a!2z0KfQtdGA0L3RltCy0YbRliwg0KfQtdGA0L3RltCy0LXRhtGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNTgwMDA!5e0!3m2!1suk!2sua!4v1697733212672!5m2!1suk!2sua" width="1433" height="576" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container">
+    <h2 class="title-h2 contact__title">Or you can contact with us</h2>
+    <div class="contact__btns">
+      <button class="whatsapp__btn">Whatsapp</button>
+      <button class="telegram__btn">Telegram</button>
+      <button class="email__btn">E-mail</button>
+    </div>
+    <p class="text-p2 contact__text">
+      Click for a free consultation and confidently achieve financial goals.
+      Empower your business with our expert services. Act now!
+    </p>
+  </div>
+</section>
+
+{% endblock %}
