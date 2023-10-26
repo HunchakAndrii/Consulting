@@ -1,0 +1,40 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 18
+
+    - name: Install dependencies
+      run: |
+        npm ci
+      working-directory: ./path/to/your/project
+
+    - name: Build
+      run: |
+        npm run build
+      working-directory: ./path/to/your/project
+
+    - name: Deploy to GitHub Pages
+      run: |
+        git config user.email "github-actions@users.noreply.github.com"
+        git config user.name "GitHub Actions"
+        git checkout main
+        git add .
+        git commit -m "Build and deploy"
+        git push
+      working-directory: ./path/to/your/project
+
