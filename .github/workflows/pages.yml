@@ -36,5 +36,5 @@ jobs:
         git add .
         git commit -m "Build and deploy"
         git push
-      working-directory: ./path/to/your/project
+      working-directory: .
 
