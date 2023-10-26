@@ -2,9 +2,9 @@ name: NodeJS with Gulp
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ['main']
   pull_request:
-    branches: [ "main" ]
+    branches: ['main']
 
 jobs:
   build:
@@ -15,24 +15,19 @@ jobs:
         node-version: [18.x]
 
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Build
-      run: |
-        npm install
-        gulp build
-    
-    - name: Deploy to GitHub Pages
-      run: |
-        git config user.email "github-actions@users.noreply.github.com"
-        git config user.name "GitHub Actions"
-        git checkout gh-pages
-        cp -r ./dist/* .
-        git add .
-        git commit -m "Build and deploy"
-        git push
+      - name: Build
+        run: |
+          npm install
+          gulp build
+
+      - name: Deploy to GitHub Pages
+        run: npx gh-pages -d dist # Replace with your build output directory
+        env:
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
