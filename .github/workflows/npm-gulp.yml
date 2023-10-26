@@ -28,6 +28,9 @@ jobs:
           gulp build
 
       - name: Deploy to GitHub Pages
-        run: npx gh-pages -d dist # Replace with your build output directory
+        run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+          npx gh-pages -d dist
         env:
           ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
