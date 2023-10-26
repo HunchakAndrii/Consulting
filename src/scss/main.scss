@@ -31,4 +31,10 @@ body{
   background-color: purple;
 }
 
-// Some
+
+
+
+* {
+  display: grid;
+  grid-template-rows: subgrid;
+}
