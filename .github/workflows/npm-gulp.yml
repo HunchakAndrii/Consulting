@@ -29,8 +29,8 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
+          git config --global user.email "City7g"
+          git config --global user.name "City7gor@gmail.com"
           npx gh-pages -d dist
         env:
           ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
