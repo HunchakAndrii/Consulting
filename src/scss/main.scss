@@ -25,7 +25,18 @@
 @import './page/services';
 @import './page/financial';
 @import './page/contact';
+@import './page/slider';
 
 body{
   background-color: purple;
+}
+
+// JJJ
+
+
+
+
+* {
+  display: grid;
+  grid-template-rows: subgrid;
 }
